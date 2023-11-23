@@ -49,7 +49,7 @@ class WeatherAppState extends State<WeatherApp> {
                     ),
                   SizedBox(height: 10.0),
                   Text(
-                    'Has accourate weather information \nfor anytime and anywhere',
+                    'Has accurate weather information \nfor anytime and anywhere',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.normal,
