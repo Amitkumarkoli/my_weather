@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:my_weather/Models/weather_models.dart';
 import 'package:http/http.dart' as http;
@@ -51,20 +52,30 @@ class _ShowWeatherState extends State<ShowWeather> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: const Color.fromARGB(255, 176, 227, 233),
         elevation: 0,
         title: const Center(
           child: Text('The Weather App'),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
-        ),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-        BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
-      ]),
+      
+    bottomNavigationBar: CurvedNavigationBar(
+    backgroundColor: Colors.blueAccent,
+    height: 60,
+    items: <Widget>[
+      
+      Icon(Icons.home, size: 30),
+      Icon(Icons.settings, size: 30),
+      Icon(Icons.person, size: 30),
+    ],
+    
+    onTap: (index) {
+      //Handle button tap
+    },
+  ),
+     
+      
+      
       body: Center(
         child: FutureBuilder<WeatherModel>(
             future: futureWeatherModel,
