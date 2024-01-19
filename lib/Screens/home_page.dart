@@ -1,5 +1,6 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:my_weather/Screens/show_weather.dart';
+import 'package:my_weather/Screens/weather_info.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -21,6 +22,18 @@ class _ButtonState extends State<HomePage> {
                 Navigator.pop(context);
               },
               icon: Icon(Icons.arrow_back))),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.blueAccent,
+        height: 60,
+        items: <Widget>[
+          Icon(Icons.home, size: 30),
+          Icon(Icons.settings, size: 30),
+          Icon(Icons.person, size: 30),
+        ],
+        onTap: (index) {
+          //Handle button tap
+        },
+      ),
       body: SafeArea(
         child: Center(
           child: Align(
@@ -30,16 +43,17 @@ class _ButtonState extends State<HomePage> {
                 image: AssetImage(
                   'assets/images/forecast_image.png',
                 ),
-                width: screenSize.width*0.8,
-                height: screenSize.width*0.8,
+                width: screenSize.width * 0.8,
+                height: screenSize.width * 0.8,
               ),
-              SizedBox(height: screenSize.width*0.09),
+              SizedBox(height: screenSize.width * 0.25),
               ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ShowWeather()));
+                        MaterialPageRoute(builder: (context) => WeatherInfo()));
                   },
-                  child: Text('check Your Weather')),
+                  child: Text('check Your Weather'),                 
+                  ),
             ]),
           ),
         ),
