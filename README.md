@@ -48,7 +48,10 @@ Follow these steps to get started with "My Weather" app:
 
 ## Screenshots
 
-This section is yet to be added.
+![App Screenshot](https://github.com/Amitkumarkoli/my_weather/assets/113758099/2e94d5b0-9fa1-4216-8835-0118d5a6130f)       
+
+
+
 
 ## Features Yet to be Added
 
