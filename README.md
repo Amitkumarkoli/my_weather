@@ -6,6 +6,7 @@
 
 - [Features](#features)
 - [Getting Started](#getting-started)
+- [Contribution Guidelines](#contribution-guidelines)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Features Yet to be Added](#features-yet-to-be-added)
@@ -38,6 +39,10 @@ Follow these steps to get started with "My Weather" app:
    - Run `flutter run` to launch the app.
 
 > Note: This project currently focuses on the frontend, and there is no backend implementation yet.
+
+## Contribution Guidelines
+
+ - Want to contribute? read [Contribution Guidelines](CONTRIBUTING.md) file
 
 ## Usage
 
