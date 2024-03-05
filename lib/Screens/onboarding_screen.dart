@@ -38,16 +38,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('Weather \nForecasts',
+                  Text(' Weather \nForecasts',
                       style: TextStyle(
-                        fontSize: 60.0,
+                        fontSize: 62.0,
                         fontWeight: FontWeight.bold,
                       )),
                   SizedBox(height: 10.0),
                   Text(
-                      'Has accurate weather information \nfor anytime and anywhere',
+                      'Has accurate weather information \n       for anytime and anywhere',
                       style: TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 22.0,
                         fontWeight: FontWeight.normal,
                       ))
                 ],
