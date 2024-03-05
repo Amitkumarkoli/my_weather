@@ -6,6 +6,7 @@
 
 - [Features](#features)
 - [Getting Started](#getting-started)
+- [Contribution Guidelines](#contribution-guidelines)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Features Yet to be Added](#features-yet-to-be-added)
@@ -39,6 +40,10 @@ Follow these steps to get started with "My Weather" app:
 
 > Note: This project currently focuses on the frontend, and there is no backend implementation yet.
 
+## Contribution Guidelines
+
+ - Want to contribute? read [Contribution Guidelines](CONTRIBUTING.md) file
+
 ## Usage
 
 - **Home Screen:** Displays the current weather information for the default location.
@@ -48,7 +53,9 @@ Follow these steps to get started with "My Weather" app:
 
 ## Screenshots
 
-This section is yet to be added.
+<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/2e94d5b0-9fa1-4216-8835-0118d5a6130f" alt="App Screenshot" width="300">
+
+
 
 ## Features Yet to be Added
 
