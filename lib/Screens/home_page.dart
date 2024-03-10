@@ -40,10 +40,11 @@ class _ButtonState extends State<HomePage> {
             if (index == 0) {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => Settings()));
-            };
-             if (index == 2) {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => UserProfile()));
+            }
+            ;
+            if (index == 2) {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => UserProfile()));
             }
           },
         ),
@@ -52,74 +53,72 @@ class _ButtonState extends State<HomePage> {
             child: Align(
               alignment: Alignment.topCenter,
               child: Column(children: [
-                Center(
-                  child: Container(
-                    margin: EdgeInsets.only(top: 20),
-                    // width: double.infinity,
-                    child: Center(
-                      child: Column(
-                        children: [
-                          CarouselSlider(
-                            items: [
-                              // Add your image widgets here
-                              Image.asset(
-                                'assets/images/forecast_image.png',
-                                //  width: double.infinity,
-                                height: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Image.asset(
-                                'assets/images/cold_air.png',
-                                //  width: double.infinity,
-                                height: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Image.asset(
-                                'assets/images/hot_weather.png',
-                                //  width: double.infinity,
-                                height: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Image.asset(
-                                'assets/images/rain_image.png',
-                                //  width: double.infinity,
-                                height: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Image.asset(
-                                'assets/images/rain.png',
-                                //  width: double.infinity,
-                                height: 150,
-                                fit: BoxFit.cover,
-                              ),
-                            ],
-                            options: CarouselOptions(
-                              height: 200.0,
-                              // enlargeCenterPage: true,
-                              // autoPlay: true,
-                              // aspectRatio: 16 / 9,
-                              autoPlayCurve: Curves.fastOutSlowIn,
-                              enableInfiniteScroll: true,
-                              autoPlayAnimationDuration:
-                                  Duration(milliseconds: 800),
-                              viewportFraction: 0.8,
-                              onPageChanged: (index, reason) =>
-                                  setState(() => activeIndex = index),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.10,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  child: Center(
+                    child: Column(
+                      children: [
+                        CarouselSlider(
+                          items: [
+                            // Adding image widgets
+                            Image.asset(
+                              'assets/images/forecast_image.png',
+                              width: double.infinity,
+                              height: 250,
+                              fit: BoxFit.cover,
                             ),
-                            carouselController: controller,
+                            Image.asset(
+                              'assets/images/cold_air.png',
+                              width: double.infinity,
+                              height: 250,
+                              fit: BoxFit.cover,
+                            ),
+                            Image.asset(
+                              'assets/images/hot_weather.png',
+                              width: double.infinity,
+                              height: 250,
+                              fit: BoxFit.cover,
+                            ),
+                            Image.asset(
+                              'assets/images/rain_image.png',
+                              width: double.infinity,
+                              height: 250,
+                              fit: BoxFit.cover,
+                            ),
+                            Image.asset(
+                              'assets/images/rain.png',
+                              width: double.infinity,
+                              height: 250,
+                              fit: BoxFit.cover,
+                            ),
+                          ],
+                          options: CarouselOptions(
+                            height: 200.0,
+                            autoPlay: true,
+                            autoPlayCurve: Curves.fastOutSlowIn,
+                            enableInfiniteScroll: true,
+                            autoPlayAnimationDuration:
+                                Duration(milliseconds: 800),
+                            viewportFraction: 0.8,
+                            onPageChanged: (index, reason) =>
+                                setState(() => activeIndex = index),
                           ),
-                          SizedBox(height: 20),
-                          AnimatedSmoothIndicator(
-                            activeIndex: activeIndex,
-                            count: 5,
-                            axisDirection: Axis.horizontal,
-                            effect: JumpingDotEffect(
-                              dotWidth: 20,
-                              dotHeight: 20,
-                            ),
-                          )
-                        ],
-                      ),
+                          carouselController: controller,
+                        ),
+                        SizedBox(height: 20),
+                        AnimatedSmoothIndicator(
+                          activeIndex: activeIndex,
+                          count: 5,
+                          axisDirection: Axis.horizontal,
+                          effect: JumpingDotEffect(
+                            dotWidth: 18,
+                            dotHeight: 18,
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),
