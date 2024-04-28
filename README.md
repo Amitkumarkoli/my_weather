@@ -1,4 +1,4 @@
-# My Weather Frontend App
+# My Weather App
 
 "My Weather" is a simple Flutter weather application that provides live weather information, including maximum and minimum temperatures, country and city details, and real-time weather updates based on the user's location.
 
@@ -38,7 +38,7 @@ Follow these steps to get started with "My Weather" app:
    - Connect your device or emulator.
    - Run `flutter run` to launch the app.
 
-> Note: This project currently focuses on the frontend, and there is no backend implementation yet.
+> Note: This project currently focuses on the frontend, and there is no backend implementation yet(except the weather API using API key).
 
 ## Contribution Guidelines
 
@@ -53,7 +53,9 @@ Follow these steps to get started with "My Weather" app:
 
 ## Screenshots
 
-<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/6e5985b0-495a-4184-8c0d-56dda4fda275" alt="Screenshot onboarding screen" style="width: 200px;">
+<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/6e5985b0-495a-4184-8c0d-56dda4fda275" alt="Screenshot Onboarding Screen" style="width: 250px;">
+<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/7f0d4a1e-9bd9-44a8-99fe-6e93d432f1b6" alt="Screenshot Home Page" style="width: 250px;"> 
+<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/ad4e825e-17f6-41f6-82b4-aa79d9a51710" alt="Weather Info page" style="width:250px;">
 
 
 
