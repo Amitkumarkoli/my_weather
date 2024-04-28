@@ -53,7 +53,7 @@ Follow these steps to get started with "My Weather" app:
 
 ## Screenshots
 
-<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/2e94d5b0-9fa1-4216-8835-0118d5a6130f" alt="App Screenshot" width="300">
+<img src="https://github.com/Amitkumarkoli/my_weather/assets/113758099/6e5985b0-495a-4184-8c0d-56dda4fda275" alt="Screenshot onboarding screen" style="width: 200px;">
 
 
 
