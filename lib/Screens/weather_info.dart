@@ -36,11 +36,11 @@ class _WeatherInfo extends State<WeatherInfo> {
     // Map weather conditions to image assets
     switch (description.toLowerCase()) {
       case 'clear':
-        return 'assets/images/clear.jpg';
+        return 'assets/images/clear_sky.jpg';
       case 'clouds':
-        return 'assets/images/cloudy.jpg';
+        return 'assets/images/cloudy_image.jpg';
       case 'rain':
-        return 'assets/images/rainy.jpg';
+        return 'assets/images/rainy_image.jpg';
       // Add more cases as needed
       default:
         return 'assets/images/default.jpg';
