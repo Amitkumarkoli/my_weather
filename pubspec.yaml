@@ -78,9 +78,9 @@ flutter:
     - assets/images/hot_weather.png
     - assets/images/rain_image.png
     - assets/images/rain.png
-    - assets/images/clear.jpg
-    - assets/images/cloudy.jpg
-    - assets/images/rainy.jpg
+    - assets/images/clear_sky.jpg
+    - assets/images/cloudy_image.jpg
+    - assets/images/rainy_image.jpg
     - assets/images/default.jpg
     
 
