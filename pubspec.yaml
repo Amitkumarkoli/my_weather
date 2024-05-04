@@ -82,6 +82,8 @@ flutter:
     - assets/images/cloudy_image.jpg
     - assets/images/rainy_image.jpg
     - assets/images/default.jpg
+    - assets/images/sun.png
+    - assets/images/man.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
