@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_weather/Screens/sign_up.dart';
+import 'package:my_weather/Screens/signup.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -61,7 +61,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SignUpScreen()));
+                      MaterialPageRoute(builder: (context) => SignUp()));
                 },
                 style: ElevatedButton.styleFrom(
                   fixedSize: const Size(300.0, 50.0),

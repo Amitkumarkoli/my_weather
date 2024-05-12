@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_weather/Screens/forgot_password.dart';
+import 'package:my_weather/Screens/signup.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -47,7 +50,23 @@ class _loginState extends State<login> {
                   minimumSize: MaterialStateProperty.all(
                   Size(double.infinity, 50)),
                 ),
-              child: Text('Login'))
+              child: Text('Login')),
+            SizedBox(height: 20),   
+            ElevatedButton(
+              onPressed: (()=>Get.to(SignUp())), 
+              style: ButtonStyle(
+                  minimumSize: MaterialStateProperty.all(
+                  Size(double.infinity, 50)),
+                ),
+              child: Text('SignUp')),
+              SizedBox(height: 20),   
+            ElevatedButton(
+              onPressed: (()=>Get.to(ForgotPassword())), 
+              style: ButtonStyle(
+                  minimumSize: MaterialStateProperty.all(
+                  Size(double.infinity, 50)),
+                ),
+              child: Text('forgot password'))
           ],
         ),
       ),
