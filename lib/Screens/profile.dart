@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatefulWidget {
@@ -8,6 +9,10 @@ class UserProfile extends StatefulWidget {
 }
 
 class _UserProfileState extends State<UserProfile> {
+
+  signOut()async{
+    await FirebaseAuth.instance.signOut();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +23,14 @@ class _UserProfileState extends State<UserProfile> {
                 },
                 icon: Icon(Icons.arrow_back))),
         body: Center(
-          child: Container(
-            child: Text('Amit'),
+          child: Column(
+            children: [
+              Text('Amit'),
+              SizedBox(height: 20),
+              ElevatedButton(onPressed: ()=>signOut(), 
+              child: Text('SignOut'),
+              )
+            ],
           ),
         ));
   }

@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:my_weather/Screens/profile.dart';
 import 'package:my_weather/Screens/settings.dart';
@@ -16,6 +17,7 @@ class HomePage extends StatefulWidget {
 class _ButtonState extends State<HomePage> {
   int activeIndex = 0;
   final controller = CarouselController();
+  final user = FirebaseAuth.instance.currentUser;
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +58,7 @@ class _ButtonState extends State<HomePage> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.10,
                 ),
+                Text('${user!.email}'),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.6,
                   child: Center(
